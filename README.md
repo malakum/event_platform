@@ -1,64 +1,70 @@
-Event Platform
-A small community business has reached out to you to create a platform where they can create and share events with members of the community.
+# Getting Started with Create React App
 
-You have been taked with building and hosting a platform (either a website or a mobile app) that allows community members to view, sign up for, and add events to their own personal calendars. Staff members should have additional functionality to create and manage events.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Minimum Viable Product (MVP)
+## Available Scripts
 
-Your platform must fulfill the following functionality:
+In the project directory, you can run:
 
-1. Display a list of events for users to browse.
-2. Allow users to sign up for an event.
-3. Allow users to add events to their Google Calendar after signing up.
-4. Enable staff members to sign-in to create and manage events.
+### `npm start`
 
-See [Completion and Submission Requirements](#completion-and-submission-requirements) for more details.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Tech Choices:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- The platform should be built using **JavaScript** or **TypeScript**.
-- **Event Data**: You can use either a freely available API for event data or create your own event data. Research and decide on which API to use prior to starting. The focus is on building the platform, not on data generation.
-- **Calendar API**: You'll need to sign up for the Google Calendar API (or an equivalent) using a free developer account. This will allow users to add events to their calendars.
-- Implement security best practices for **user authentication**
-- Host the project on a **free platform** (e.g., GitHub Pages for web, Expo for mobile apps).
+### `npm test`
 
-The following technologies and tools are **suggestions**, not requirements:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- **React** or **React Native** for the frontend.
-- **TypeScript** for a new challenge.
-- **Google Calendar API** for calendar integration.
-- **ExpoDev** for hosting a mobile React Native apps - This platform will provide a QR code and URL so your project can be accessed via the ExpoDev app.
+### `npm run build`
 
-## UI Requirements
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- Ensure the design is **responsive** and works well across different screen sizes.
-- **Accessibility** must be considered for users with disabilities (e.g., screen readers, keyboard navigation).
-- The platform should clearly communicate **errors** to the users (e.g., failed requests, missing fields).
-- Loading states should be obvious when content is being fetched.
-- The user interface should be intuitive, making it easy to find, sign up for, and create events.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Completion and Submission Requirements
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-The due date will be advised, but it will be no later than four weeks after the project commencement.
+### `npm run eject`
 
-Your project must meet the following criteria to be considered complete:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-1. The project must be **hosted** and publicly accessible (web or mobile).
-2. The README must include:
-   - A summary of the project
-     - you may consider recording a **video walkthrough** of your platform, highlighting key features. Host this video on a free platform (e.g., YouTube) and include a link in your README.
-   - Test account access details
-   - Clear instructions on how to run the project locally, including any setup steps (e.g., installing dependencies, setting up environment variables).
-3. Meet the [MVP requirements](#minimum-viable-product-mvp) outlined above.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Failure to do this may result in the project being rejected.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## _Optional_ Extensions
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-If you have time once you have completed the MVP requirements, consider adding the following features:
+## Learn More
 
-1. **Payment platform integration**: Implement payments via Stripe, Google Pay, etc.
-2. **Confirmation emails**: Automatically send confirmation emails to users who sign up for an event.
-3. **Social media integration**: Allow users to share events on social platforms.
-4. **Cross-platform**: Build both a website and a mobile app.
-5. **Google/Social login**: Allow users to sign up using their Google or social media accounts.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
