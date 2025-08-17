@@ -62,3 +62,6 @@ If you have time once you have completed the MVP requirements, consider adding t
 3. **Social media integration**: Allow users to share events on social platforms.
 4. **Cross-platform**: Build both a website and a mobile app.
 5. **Google/Social login**: Allow users to sign up using their Google or social media accounts.
+
+## to add react app in this project
+npx create-react-app@latest .
