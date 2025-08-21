@@ -1,47 +1,49 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 
 
 
 const NewEvent = () =>{ 
-const eventData = [ {name:'DANCE' , desc:'Dancing'} , {name:'FOOTBALL' , desc:'Playing Football'},
+const [eventData , setEventData]= useState([ {name:'DANCE' , desc:'Dancing'} , {name:'FOOTBALL' , desc:'Playing Football'},
                                               {name:'CRICKET' , desc:'Playing Cricket'},
-                                              {name:'Music' , desc:'Music lesson'}];
-
-const [theme, setTheme] = useState("light");
+                                              {name:'Music' , desc:'Music lesson'}]);
 
 
-  useEffect(() => {
-    document.body.className = theme;
-  }, [theme]);
+    // const [ theme , setTheme] = useState("light");
 
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };                                       
+    // useEffect(() => {
+    //     document.body.className = theme;
+    //   }, [theme]);
+    
+    //   const toggleTheme = () => {
+    //     setTheme(theme === "light" ? "dark" : "light");
+    //   };      
+  
 
    // const handleEvent = () => { const totalEvent =eventData.length};                                           
 
-    return (<><h1>EVENT PLATFORM </h1>
-               <h2>{theme === "light" ? "Light Mode 🌞" : "Dark Mode 🌙"}</h2>
-               <button onClick={toggleTheme}>Toggle Theme</button>
-                <h3> {theme=== "light" ? 
-                 <ul className="event-page-light">
-                  
+    return (<>
+             <h2>Event list </h2>
+                  {/* <h3> {theme=== "light" ?  */}
+                <ul className= "event-page">
+                {/* //  <ul className="event-page-light"> */}
+                  <p>-------------</p>
                     {eventData.map((event)=> (
-                     <li  Key = {event}> <p >{event.name}</p>
-                     <p>{event.desc}</p>
+                     <li  Key = {event} className= "event-card"> <p >Event Name : {event.name}</p>
+                     <p>Event Desc : {event.desc}</p>
                      </li>))}
+                      <p>-------------</p>
                  </ul>
-                :
-                 <ul className="event-page-dark">
-                 
-                    {eventData.map((event)=> (
-                    <li  Key = {event}> <p >{event.name}</p>
-                     <p>{event.desc}</p>
-                     </li>))}
-                 </ul> } 
+                {/* // :
+                // <ul className = "event-page">
+                
+                //     {eventData.map((event)=> (
+                //     <li  Key = {event}> <p >{event.name}</p>
+                //      <p>{event.desc}</p>
+                //      </li>))}
+                //  </ul> }  */}
                 <p>Total Event : {eventData.length}</p> 
-                </h3>
+                {/* // </h3> */}
               
           </>)};
 

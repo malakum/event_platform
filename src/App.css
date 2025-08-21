@@ -24,27 +24,45 @@
   color: white;
 }
 
-.event-page-dark {
-  background-color: #282c34;
+.event-page {
+  /* background-color: #8dcff6; */
   min-height: 50vh;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 1vmin);
-  color: white;
+  border: 2px solid green;
 }
 
-.event-page-light {
-  background-color: #f0f2f6;
-  min-height: 50vh;
+.event-card {
+   /* background-color: #8dcff6;  */
+  /* min-height: 50vh; */
+  width: 800px;
   display: flex;
+  /* grid-template-columns: repeat(4, 1fr);
+  gap: 16px; */
   flex-direction: column;
-  align-items: center;
+  align-items: centre;
   justify-content: center;
   font-size: calc(10px + 1vmin);
-  color: rgb(11, 0, 0);
+  border : 2px solid blue;
+  
 }
+
+.task-list {
+  /* width: auto;
+   display: flex;
+  flex-direction: column;
+  align-items: centre;
+  justify-content: center; */ 
+  font-size: calc(10px + 1vmin);
+  border : 2px solid rgb(255, 0, 157);
+  
+}
+
+
 
 body.light {
   background-color: #ffffff;

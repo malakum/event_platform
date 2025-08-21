@@ -1,10 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import NewEvent from './Components/NewEvent';
+import TaskCard from './Components/TaskCard';
+import Header from './Components/Header';
 
 function App() {
   return (
     <div className="App">
+     <Header/>
+      <TaskCard/>
       <NewEvent/>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
