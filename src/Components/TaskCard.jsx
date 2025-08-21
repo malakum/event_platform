@@ -1,9 +1,17 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 
 const TaskCard =() =>{
   const [task, setTask] = useState("");
   const [taskDesc , setTaskDesc] = useState("");
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(()=>{
+    const saved = localStorage.getItem("tasks");
+    //console.log('saved',saved);
+    return saved ? JSON.parse(saved) : [];});
+
+    useEffect(() => {
+    // save tasks whenever they change
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
   
   const addTask = () => {
     if (task.trim() === "") return;
@@ -40,10 +48,10 @@ const TaskCard =() =>{
         Add
       </button>
 
-      <ul >
+      <ul  className= "task-list">
      
         {tasks.map((t, i) => (
-          <li key={i} className= "task-list"> {t} 
+          <li key={i}> {t} 
            
           <button
               onClick={() => deleteTask(t)}

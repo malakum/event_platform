@@ -28,8 +28,8 @@ const [eventData , setEventData]= useState([ {name:'DANCE' , desc:'Dancing'} , {
                 <ul className= "event-page">
                 {/* //  <ul className="event-page-light"> */}
                   <p>-------------</p>
-                    {eventData.map((event)=> (
-                     <li  Key = {event} className= "event-card"> <p >Event Name : {event.name}</p>
+                    {eventData.map((event,i)=> (
+                     <li  key = {i}  className= "event-card"> <p >Event Name : {event.name}</p>
                      <p>Event Desc : {event.desc}</p>
                      </li>))}
                       <p>-------------</p>
