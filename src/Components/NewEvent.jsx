@@ -8,6 +8,14 @@ const [eventData , setEventData]= useState([ {name:'DANCE' , desc:'Dancing'} , {
                                               {name:'CRICKET' , desc:'Playing Cricket'},
                                               {name:'Music' , desc:'Music lesson'}]);
 
+                                              const title = "Meeting with Team";
+    const details = "Discuss project updates";
+    const location = "Zoom";
+    const start = "20250820T100000Z"; // YYYYMMDDTHHmmssZ (UTC time)
+    const end = "20250820T110000Z";
+    const newEvent = {title :title, details:details, location:location, start:start,end:end};
+    console.log(newEvent);
+
 
     // const [ theme , setTheme] = useState("light");
 
